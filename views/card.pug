@@ -1,0 +1,30 @@
+.container.cont.mt-5 
+    .row.MyRow 
+        if data
+        each data in db            
+            //- .col-lg-3.col-md-3.col-sm-8.mt-4.mb-4.AllCards
+            .col-lg-4.col-md-5.col-sm-6.mt-4.mb-4
+                .card 
+                    .card_img
+                        .card-img 
+                            .img(dataId= "/products/"+ data.id)
+                                img(src= "images/dataImg/"+ data.img) 
+                                if data.sale 
+                                    p.skidka= data.sale
+                                        | %
+                                else 
+                                    p
+                    .card_text 
+                        span.category= data.category
+                        if data.sale 
+                            .prices.d-flex.justify-content-between
+                                p.sale_price= data.price - (data.price * data.sale / 100)
+                                    |  so'm
+                                p.price= data.price
+                        else 
+                            p.asl_price= data.price
+                        h2.nomi= data.title
+                    .d-flex.card_buttons
+                        a(href="/products/"+ data.id).buttons.batafsil batafsil
+        else 
+            h3.title mahsulot mavjud emas

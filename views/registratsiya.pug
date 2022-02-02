@@ -1,0 +1,36 @@
+extends layout
+
+block content
+    include navbar
+    .container
+        h1.title= title
+        form(action="register" method="post")
+            .mb-3
+                label.form-label(for='exampleInputEmail1') ismingiz
+                input.form-control#exampleInputEmail1(type='text' aria-describedby='emailHelp' name="name")
+            .mb-3
+                label.form-label(for='exampleInputEmail1') familyangiz
+                input.form-control#exampleInputEmail1(type='text' aria-describedby='emailHelp' name="surname")
+            .mb-3
+                label.form-label(for='exampleInputEmail1') loginingiz 
+                input.form-control#exampleInputEmail1(type='text' aria-describedby='emailHelp' name="login")
+            .mb-3
+                label.form-label(for='exampleInputEmail1') telefon raqamingiz
+                input.form-control#exampleInputEmail1(type='number' aria-describedby='emailHelp' name="phone_number")
+            .mb-3
+                label.form-label(for='exampleInputEmail1') Email address
+                input.form-control#exampleInputEmail1.email(type='email' aria-describedby='emailHelp' name="email")
+                .email_error.mt-3
+                    span#error
+            .mb-3
+                label.form-label(for='exampleInputPassword1') Password
+                .d-flex
+                    input.form-control#exampleInputPassword1(type='password' name="password")
+                    a(href="#").hide_password 
+                        span.show show
+                .pass_error.mt-3 
+                    span#pass
+                    span#password_msg
+                    span#password_true
+            .mb-3.form-check
+            button.btn.btn-primary(type='submit') Ro'yxatdan o'tish

@@ -1,0 +1,112 @@
+/* ============================ MEDIA ============================== */
+
+@media (max-width: 1199px) {
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+  }
+
+  .nav-link {
+    font-size: 15px;
+  }
+
+  #carouselExampleCaptions .carousel-inner .carousel-item {
+    height: 525px;
+  }
+
+  .card .card_img {
+    height: 215px;
+  }
+
+  .card .card_text .prices {
+    font-size: 1.2rem;
+  }
+
+  .card .card_text .muddatli {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 830px;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
+  #carouselExampleCaptions .carousel-inner .carousel-item {
+    height: 500px;
+  }
+  .card .card_text .prices {
+    font-size: 1.1rem;
+  }
+  .card .card_text .price {
+    font-size: 1.1rem;
+  }
+  .card .card_buttons .buttons,
+  .user_button .buttons {
+    padding: 7px;
+    font-size: 15px;
+  }
+  .card .card_img .card-img .img .skidka,
+  .card .card_img_Full .card-img .img .skidka {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+  .cont {
+    box-shadow: none !important;
+  }
+  .usertop {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    display: none;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 610px) {
+  .card .card_img_Full {
+    height: 360px !important;
+  }
+}
+
+@media (max-width: 525px) {
+  .title {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .user_button {
+    margin-top: 10px !important;
+  }
+
+  .usertop {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  #carouselExampleCaptions {
+    display: none !important;
+  }
+  .title {
+    margin-bottom: 0;
+  }
+  .cont {
+    margin-top: 0 !important;
+  }
+}

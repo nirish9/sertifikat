@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  include navbar
+  .container
+    h1.title= title
+    form(action="login" method="post").mt-5
+      .mb-3
+        label.form-label(for='exampleInputEmail1') Loginingiz
+        input.form-control#exampleInputEmail1(type='text' aria-describedby='emailHelp' placeholder="Loginingiz ..." name="username")
+      .mb-3
+        label.form-label(for='exampleInputPassword1') Parolingiz
+        input.form-control#exampleInputPassword1(type='password' placeholder="Parol" name="password")
+      .d-flex.justify-content-between
+        button.btn.btn-primary(type='submit') Login
+        a(href="/register").btn.btn-primary registratsiya

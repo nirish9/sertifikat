@@ -1,0 +1,44 @@
+extends layout
+block content
+    include navbar
+    .container 
+        .row 
+            h1.title= title
+            .col-lg-8
+                .card 
+                    .card_img_Full
+                        .card-img 
+                            .img(dataId= "/products/"+ data.id)
+                                img(src= "images/dataImg/"+ data.img) 
+                                if data.sale 
+                                    p.skidka= data.sale
+                                        | %
+                                else 
+                                    p
+                    .card_text 
+                        span.category= data.category
+                        if data.sale 
+                            .prices.d-flex.justify-content-between
+                                p.sale_price= data.price - (data.price * data.sale / 100)
+                                    |  so'm
+                                p.price= data.price
+                        else 
+                            p.asl_price= data.price
+                        h2.nomi= data.title
+                        h2.date= data.timePro.toLocaleDateString()
+                        h2.comment= data.aboutPro
+                    .d-flex.justify-content-between.card_buttons
+                        a(href="/products/edit/"+ data.id).buttons.kupit o'zgartirish 
+                        a(href="/products/delete/"+ data.id).buttons.batafsil o'chirish 
+            .col-lg-4.usertop
+                h1.foydalanuvchi 
+                    | foydalanuvchi
+                .About_User.d-flex.justify-content-between
+                    .userAvatar
+                        ion-icon(name='person-circle-outline')
+                    h1.Username 
+                        .saytda 
+                            span  
+                            span 
+                .user_button.d-flex.mt-5
+                    a(href= "tel:"+ "+998"+ data.phone).buttons.callButton qo'ng'iroq qilish 

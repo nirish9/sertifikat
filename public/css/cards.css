@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+}
+
+.MyRow {
+  justify-content: center;
+}
+
+.cont {
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================= */
+
+.card {
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+  color: #000;
+  transition: 1s;
+}
+
+.card .card_img {
+  width: 100%;
+  height: 240px;
+  margin-bottom: 1rem;
+}
+
+.card .card_img .card-img,
+.card .card_img_Full .card-img {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.card .card_img .card-img .img,
+.card .card_img_Full .card-img .img {
+  width: 100%;
+  height: 100%;
+}
+
+.card .card_img .card-img .img img,
+.card .card_img_Full .card-img .img img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card .card_img .card-img .img .skidka,
+.card .card_img_Full .card-img .img .skidka {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(16, 214, 33);
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.card .card_text {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.card .card_text .category {
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Comfortaa", cursive;
+}
+
+.card .card_text .prices {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.card .card_text .price {
+  text-decoration: line-through;
+  font-size: 1.2rem;
+  color: #c72a2a;
+  line-height: 1.5rem;
+}
+
+.card .card_text .asl_price {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.card .card_text .nomi {
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Comfortaa", cursive;
+}
+
+.card .card_buttons,
+.user_button {
+  align-items: center;
+  justify-content: center;
+}
+
+.card .card_buttons .buttons,
+.user_button .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+
+.card .card_buttons .kupit {
+  width: 50%;
+  margin-right: 5px;
+  background: rgb(16, 214, 92);
+}
+
+.card .card_buttons .batafsil,
+.user_button .batafsil {
+  width: 50%;
+  margin-left: 5px;
+  background: rgb(16, 141, 214);
+}
+
+.user_button .callButton {
+  width: 100%;
+  background: rgb(16, 141, 214);
+}
+
+.card .card_buttons .buttons:hover,
+.user_button .buttons:hover,
+.user_button .callButton:hover {
+  transition: 0.5s;
+}
+
+.AllCards {
+  padding: 10px;
+}
+
+/* BATAFSIL QISMI */
+
+.card .card_img_Full {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 1rem;
+}
+
+.card .card_text .date {
+  font-size: 25px;
+}
+
+.card .card_text .comment {
+  font-size: 25px;
+}
+
+/* FOYDALANUVCHI QISMI */
+
+.foydalanuvchi {
+  text-align: center;
+  font-size: 30px;
+}
+
+.About_User {
+  position: relative;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.About_User .userAvatar {
+  width: 30%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.About_User .userAvatar ion-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.About_User .Username {
+  width: 70%;
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+.About_User .Username .saytda {
+  font-size: 18px;
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+.user_button .icon-tabler-edit:hover,
+.user_button .icon-tabler-trash:hover,
+.user_button .icon-tabler-phone-call:hover {
+  background: transparent !important;
+}
